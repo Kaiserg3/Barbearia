@@ -8,7 +8,7 @@ Site responsivo de uma barbearia fictícia, com apresentação, serviços e pre�
 
 Use o [download direto do site pronto](https://github.com/Kaiserg3/Barbearia/raw/refs/heads/main/downloads/BRAVO-Barbearia.zip). Extraia o ZIP e abra **ABRIR-BARBEARIA.html** no Chrome, Edge ou Firefox. Esse pacote contém somente um HTML completo, com imagens, fontes e agendamento demonstrativo local, e não exige Node.js ou instalação.
 
-Há também uma versão menor em **`ABRIR-BARBEARIA.html`**, na raiz deste repositório. Ela mantém o código do site e a agenda no próprio HTML, mas carrega as fotografias e fontes pela internet. O arquivo original de 2 MB pode ultrapassar o limite do visualizador de arquivos do GitHub; a versão menor evita esse problema de tamanho. O visualizador de código do GitHub não renderiza arquivos HTML como uma página de site.
+A página completa também está em **`index.html`** e **`ABRIR-BARBEARIA.html`**, na raiz deste repositório. Esses arquivos incluem a apresentação, os serviços e a agenda demonstrativa; não são telas de carregamento. Eles mantêm o código e os estilos no próprio HTML e carregam fotografias e fontes pela internet. O arquivo original de 2 MB pode ultrapassar o limite do visualizador de arquivos do GitHub; a versão menor evita esse problema de tamanho. O visualizador de código do GitHub não renderiza arquivos HTML como uma página de site.
 
 ## Publicar como um site pelo navegador
 
@@ -50,7 +50,7 @@ Em produção, o Express entrega o site compilado e a API juntos na porta 3001. 
 
 Uma cópia completa pronta para abrir está em **`demo/BRAVO-Barbearia.html`** e no pacote **`downloads/BRAVO-Barbearia.zip`**. O pacote traz apenas o HTML pronto, com o nome **ABRIR-BARBEARIA.html**, para evitar confusão com os arquivos de desenvolvimento. Essa cópia inclui todo o visual e a agenda local demonstrativa, sem precisar instalar Node.js.
 
-O `index.html` do projeto e o build normal precisam do servidor para carregar a aplicação. Para baixar e abrir uma versão independente em um navegador, gere:
+A entrada da aplicação com servidor fica em **`web/index.html`** e é usada pelo Vite. O `index.html` da raiz é a demonstração pronta para abrir, com o conteúdo completo e sem imports de módulos externos. Para gerar novamente a versão independente completa, execute:
 
 ```bash
 npm run build:preview
@@ -59,6 +59,8 @@ npm run build:preview
 Abra `dist/BRAVO-Barbearia.html`. Esse arquivo inclui JavaScript, estilos, fontes e fotografias, sem solicitar arquivos externos. O conteúdo também aparece em visualizadores que bloqueiam JavaScript, mas os botões precisam de JavaScript para funcionar.
 
 Para gerar a variante menor, execute `npm run build:light`. A saída é `dist/ABRIR-BARBEARIA.html`; atualize a cópia da raiz e `docs/index.html` ao preparar uma nova entrega. A variante menor mantém os estilos e o JavaScript embutidos e usa os recursos públicos deste repositório para carregar fotos e fontes.
+
+Para atualizar todas as cópias de entrega de uma vez, execute **`npm run export`**. Esse comando requer Python 3 apenas para montar o ZIP e copia a página completa para `index.html`, `ABRIR-BARBEARIA.html`, `docs/index.html` e o pacote de download. Use-o explicitamente ao preparar uma publicação; ele atualiza os arquivos de demonstração versionados. Os comandos normais `npm run dev` e `npm run build` continuam usando a entrada separada em `web/`.
 
 Nesta versão independente, a agenda é uma simulação local, separada da API e do banco de dados do site. Os horários ficam apenas neste navegador; se o visualizador bloquear o armazenamento, duram apenas enquanto a página estiver aberta. Não são sincronizados entre clientes. O arquivo informa essa diferença ao agendar. A versão completa continua usando o servidor e o SQLite.
 
@@ -88,7 +90,7 @@ No HTML independente, o botão **Ver agenda de demonstração** permite conhecer
 
 ## Personalizar
 
-O catálogo, os profissionais, o endereço de exemplo no Meireles em Fortaleza e as regras de agenda estão em `server/index.js`. Os textos e os cartões da página estão em `src/App.jsx`; mantenha seus valores alinhados ao catálogo ao personalizar. O visual claro em creme e verde-sálvia está em `src/styles.css`. O calendário está em `src/BookingCalendar.jsx` e o painel em `src/OwnerPanel.jsx`.
+O catálogo, os profissionais, o endereço de exemplo no Meireles em Fortaleza e as regras de agenda estão em `server/index.js`. Os textos e os cartões da página estão em `src/App.jsx`; mantenha seus valores alinhados ao catálogo ao personalizar. O visual original em creme, grafite e dourado está em `src/styles.css`. O calendário está em `src/BookingCalendar.jsx` e o painel em `src/OwnerPanel.jsx`.
 
 Antes de usar com uma empresa real, substitua os dados fictícios, ajuste os avisos de demonstração e configure hospedagem HTTPS, armazenamento persistente com backup e a política de privacidade adequada ao atendimento.
 

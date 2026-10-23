@@ -15,15 +15,15 @@
 :root {
   color-scheme: light;
   font-family: "DM Sans", sans-serif;
-  color: #26372c;
-  background: #f4f4e9;
+  color: #292b25;
+  background: #f8f7f3;
   font-synthesis: none;
   font-weight: 400;
-  --paper: #faf8ef;
-  --ink: #26372c;
-  --muted: #596453;
-  --gold: #94713b;
-  --border: #d4ddce;
+  --paper: #f8f7f3;
+  --ink: #292b25;
+  --muted: #787970;
+  --gold: #b2915d;
+  --border: #e1e0d9;
   --serif: "Instrument Serif", Georgia, serif;
 }
 * {
@@ -37,9 +37,7 @@ body {
   margin: 0;
   min-height: 100vh;
   color: var(--ink);
-  background:
-    radial-gradient(ellipse at 0 0, #f8e9d1 0, transparent 54%),
-    linear-gradient(125deg, #fbf8ef 22%, #e4eee5 100%);
+  background: var(--paper);
 }
 button,
 input,
@@ -586,8 +584,8 @@ em {
   margin-top: 23px;
 }
 .about-section {
-  background: linear-gradient(115deg, #e2ebdd 0%, #f2e7d4 100%);
-  color: var(--ink);
+  background: #282e27;
+  color: #f0eee5;
   padding-block: 87px;
 }
 .about-grid {
@@ -643,7 +641,7 @@ em {
   color: #cfb481;
 }
 .about-content > .eyebrow {
-  color: #76613c;
+  color: #b8aa8b;
   font-size: 9px;
 }
 .about-content h2 {
@@ -657,7 +655,7 @@ em {
 .about-content > p {
   font-size: 13px;
   line-height: 1.95;
-  color: #4b594b;
+  color: #b8bcb1;
   margin-top: 22px;
   max-width: 385px;
 }
@@ -675,19 +673,13 @@ em {
   align-items: center;
   gap: 7px;
   font-size: 11px;
-  color: #3f513e;
+  color: #dcddd3;
 }
 .about-values svg {
-  color: #6c7b52;
+  color: #bba478;
 }
 .about-content > .button {
   margin-top: 31px;
-  background: var(--ink);
-  color: #fffaf1;
-}
-.about-content > .button:hover {
-  background: #40543d;
-  color: #fffaf1;
 }
 .team-intro {
   color: var(--muted);
@@ -759,7 +751,7 @@ em {
   background: #e9e3d6;
 }
 .booking-banner {
-  background: linear-gradient(110deg, #f1e1c8 5%, #e3ecdd 100%);
+  background: #e9e2d3;
   position: relative;
   overflow: hidden;
 }
@@ -881,8 +873,8 @@ em {
   font-size: 10px;
 }
 .site-footer {
-  background: linear-gradient(115deg, #dbe5d6, #f0e4cf);
-  color: var(--ink);
+  background: #282e27;
+  color: #eeeade;
 }
 .footer-top {
   display: flex;
@@ -891,15 +883,15 @@ em {
   padding-block: 48px;
 }
 .brand-light .brand-symbol {
-  border-color: #7b8a71;
+  border-color: #a8ac9d;
 }
 .brand-light .brand-name {
-  color: var(--ink);
+  color: #f2efe5;
 }
 .footer-top > p {
   font-size: 11px;
   line-height: 1.9;
-  color: #4b5c48;
+  color: #a9af9f;
   margin-right: 30px;
 }
 .back-top {
@@ -907,17 +899,17 @@ em {
   display: flex;
   align-items: center;
   gap: 14px;
-  color: #3f513d;
+  color: #d6d9cf;
 }
 .footer-bottom {
-  border-top: 1px solid #b6c4aa;
+  border-top: 1px solid #44493e;
   display: flex;
   justify-content: space-between;
   gap: 15px;
   align-items: center;
   padding-block: 21px;
   font-size: 8px;
-  color: #52634b;
+  color: #9ba18f;
 }
 .footer-demo {
   font-size: 7px;
@@ -1022,7 +1014,7 @@ em {
   overflow: auto;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(135deg, #fffcf5, #edf3e8);
+  background: var(--paper);
   box-shadow: 0 30px 100px #0004;
   outline: none;
   animation: modal-in 0.25s ease;
