@@ -1,0 +1,43 @@
+{
+  "upstream": "https://github.com/codewithsadee/barber",
+  "upstream_usage_statement": "The upstream README states: This project is free to use and does not contains any license.",
+  "photographer": "Individual photographers are not identified by the upstream repository.",
+  "note": "Stock photographs used as demonstration imagery; do not imply they depict the actual business or its staff.",
+  "images": [
+    {
+      "file": "hero.jpg",
+      "source": "https://raw.githubusercontent.com/codewithsadee/barber/master/assets/images/hero-banner.jpg",
+      "description": "Cliente recebe corte de cabelo em uma barbearia, fotografia horizontal em tons quentes."
+    },
+    {
+      "file": "service-haircut.jpg",
+      "source": "https://raw.githubusercontent.com/codewithsadee/barber/master/assets/images/gallery-3.jpg",
+      "description": "Detalhe de corte masculino com degradê, perfil de cliente."
+    },
+    {
+      "file": "service-beard.jpg",
+      "source": "https://raw.githubusercontent.com/codewithsadee/barber/master/assets/images/gallery-2.jpg",
+      "description": "Barbeiro com luvas cuida da barba de um cliente reclinado."
+    },
+    {
+      "file": "service-combo.jpg",
+      "source": "https://raw.githubusercontent.com/codewithsadee/barber/master/assets/images/gallery-4.jpg",
+      "description": "Cliente com barba recebe cuidados no cabelo."
+    },
+    {
+      "file": "about.jpg",
+      "source": "https://raw.githubusercontent.com/codewithsadee/barber/master/assets/images/pricing-bg.jpg",
+      "description": "Close de acabamento da barba com máquina, iluminação quente."
+    },
+    {
+      "file": "haircut-detail.jpg",
+      "source": "https://raw.githubusercontent.com/codewithsadee/barber/master/assets/images/gallery-1.jpg",
+      "description": "Close lateral de um corte masculino feito com máquina."
+    },
+    {
+      "file": "barber-at-work.jpg",
+      "source": "https://raw.githubusercontent.com/codewithsadee/barber/master/assets/images/appoin-banner-2.jpg",
+      "description": "Barbeiro trabalha na barba de um cliente, composição vertical."
+    }
+  ]
+}

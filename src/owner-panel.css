@@ -1,0 +1,486 @@
+.owner-entry {
+  font-size: 10px;
+  color: #344a35;
+  gap: 7px;
+}
+.owner-entry:hover {
+  color: #6c542f;
+}
+.owner-panel {
+  width: 520px;
+  max-height: calc(100dvh - 40px);
+  overflow: auto;
+  background: linear-gradient(135deg, #fffaf0, #e9f1e5);
+  color: #26372c;
+  outline: none;
+  box-shadow: 0 30px 100px #0003;
+}
+.owner-panel-agenda {
+  width: 800px;
+}
+.owner-top {
+  padding: 22px 30px;
+  border-bottom: 1px solid #d6dfcc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.owner-top .modal-brand small {
+  color: #647251;
+  font-size: 7px;
+  letter-spacing: 1.2px;
+  margin-left: 12px;
+}
+.owner-login {
+  padding: 37px 38px;
+}
+.owner-lock {
+  display: grid;
+  place-items: center;
+  height: 53px;
+  width: 53px;
+  border-radius: 50%;
+  background: #e2ead8;
+  color: #526641;
+  margin-bottom: 25px;
+}
+.owner-login > .eyebrow {
+  color: #65734e;
+  font-size: 8px;
+  letter-spacing: 1.6px;
+}
+.owner-login h2 {
+  font-size: 48px;
+  margin-top: 16px;
+}
+.owner-login > p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #57654e;
+  margin: 17px 0 23px;
+}
+.owner-password-field {
+  position: relative;
+}
+.owner-password-field input {
+  padding-right: 46px;
+  background: #fffefa;
+  border-color: #bbc9ae;
+  font-size: 12px;
+}
+.owner-password-field button {
+  position: absolute;
+  right: 8px;
+  top: 7px;
+  color: #647453;
+}
+.owner-login-button {
+  width: 100%;
+  margin-top: 18px;
+  gap: 15px;
+}
+.owner-login .owner-help {
+  font-size: 10px;
+  line-height: 1.8;
+  color: #62714f;
+  margin: 15px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.owner-demo-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: #edf1e2;
+  border: 1px solid #c5d1b2;
+  padding: 15px;
+  margin: 18px 0;
+  color: #4f623b;
+}
+.owner-demo-notice > svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.owner-demo-notice p {
+  font-size: 11px;
+  line-height: 1.85;
+}
+.owner-setup-notice {
+  padding: 24px;
+  background: #edf1e2;
+  border: 1px solid #c5d1b2;
+  margin-top: 25px;
+}
+.owner-setup-notice > svg {
+  color: #6a7c50;
+}
+.owner-setup-notice h3 {
+  font-size: 14px;
+  margin-top: 13px;
+}
+.owner-setup-notice p {
+  font-size: 11px;
+  line-height: 1.85;
+  color: #566849;
+  margin-top: 10px;
+}
+.owner-checking {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 12px;
+  color: #657551;
+  padding: 22px;
+}
+.owner-agenda-content {
+  padding: 30px;
+}
+.owner-agenda-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.owner-agenda-heading .eyebrow {
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  color: #65734e;
+}
+.owner-agenda-heading h2 {
+  font-size: 43px;
+  margin-top: 13px;
+  line-height: 1.08;
+}
+.owner-agenda-heading > .text-link {
+  align-self: flex-start;
+  margin-top: 5px;
+  font-size: 11px;
+}
+.owner-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 26px;
+}
+.owner-stats > div {
+  padding: 18px 20px;
+  border: 1px solid #cdd8c1;
+  background: #fffdf5;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.owner-stats svg {
+  color: #708453;
+}
+.owner-stats > div > span {
+  display: block;
+  font-size: 10px;
+  color: #62724e;
+}
+.owner-stats strong {
+  display: block;
+  font-size: 27px;
+  font-weight: 550;
+  color: #32432b;
+  margin-top: 5px;
+  line-height: 1.2;
+}
+.owner-filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 25px;
+}
+.owner-filters label {
+  font-size: 11px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 9px;
+}
+.owner-filters select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #c5d0b7;
+  border-radius: 0;
+  background: #fffefa;
+  min-height: 44px;
+  color: #31432a;
+  font: inherit;
+  font-size: 12px;
+}
+.owner-date-controls {
+  display: flex;
+  align-items: center;
+  border: 1px solid #c5d0b7;
+  background: #fffefa;
+  padding: 0 4px;
+}
+.owner-date-controls input {
+  flex: 1;
+  width: 0;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  font-size: 12px;
+  padding: 10px 4px;
+  min-height: 43px;
+  color: #31432a;
+}
+.owner-date-controls .icon-button {
+  flex-shrink: 0;
+  width: 27px;
+}
+.owner-list-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 27px 0 13px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #ccd8c0;
+}
+.owner-list-heading p {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.owner-list-heading .text-link {
+  font-size: 10px;
+  gap: 6px;
+}
+.owner-bookings {
+  display: grid;
+  gap: 12px;
+}
+.owner-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 40px 20px;
+  color: #6d8055;
+  background: #f4f6ed;
+  border: 1px dashed #c0cfae;
+  gap: 15px;
+}
+.owner-empty h3 {
+  font-size: 14px;
+  color: #445935;
+}
+.owner-empty p {
+  font-size: 11px;
+  line-height: 1.9;
+  max-width: 320px;
+  color: #667a50;
+}
+.owner-empty .button {
+  margin-top: 5px;
+  font-size: 11px;
+  border-color: #b8c6a6;
+}
+.owner-booking {
+  display: grid;
+  grid-template-columns: 72px 1fr auto;
+  gap: 18px;
+  align-items: start;
+  padding: 19px;
+  background: #fffef8;
+  border: 1px solid #d1dbc6;
+}
+.owner-booking-time {
+  padding-top: 1px;
+}
+.owner-booking-time > strong {
+  display: block;
+  font-size: 23px;
+  font-weight: 550;
+  line-height: 1.1;
+}
+.owner-booking-time > span {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-top: 9px;
+  font-size: 9px;
+  color: #697b51;
+}
+.owner-booking-details h3 {
+  font-size: 13px;
+  font-weight: 600;
+}
+.owner-booking-details > p {
+  font-size: 11px;
+  color: #5f6f4c;
+  line-height: 1.7;
+  margin-top: 5px;
+}
+.owner-booking-details > p > span {
+  margin: 0 3px;
+  color: #9aa98a;
+}
+.owner-booking-details > a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  margin-top: 9px;
+  color: #536c3a;
+}
+.owner-booking-details > small {
+  font-size: 9px;
+  color: #768568;
+  display: block;
+  margin-top: 9px;
+}
+.owner-reference {
+  display: block;
+  font-size: 8px;
+  letter-spacing: 0.6px;
+  margin-top: 9px;
+  color: #7f8d70;
+}
+.owner-booking-price {
+  text-align: right;
+  white-space: nowrap;
+}
+.owner-booking-price strong {
+  font-weight: 550;
+  font-size: 16px;
+}
+.owner-booking-price > span {
+  margin-top: 9px;
+  font-size: 8px;
+  color: #5b743d;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3px;
+}
+.owner-update-note {
+  font-size: 9px;
+  line-height: 1.8;
+  text-align: center;
+  color: #6b7e54;
+  margin-top: 20px;
+}
+@media (max-width: 680px) {
+  .owner-panel {
+    max-height: calc(100dvh - 24px);
+  }
+  .owner-top {
+    padding: 19px 20px;
+  }
+  .owner-top .modal-brand small {
+    font-size: 6px;
+    letter-spacing: 1px;
+    margin-left: 9px;
+  }
+  .owner-login {
+    padding: 28px 23px;
+  }
+  .owner-login h2 {
+    font-size: 44px;
+  }
+  .owner-login > .eyebrow {
+    font-size: 7px;
+  }
+  .owner-agenda-content {
+    padding: 24px 20px;
+  }
+  .owner-agenda-heading h2 {
+    font-size: 35px;
+  }
+  .owner-agenda-heading > .text-link {
+    font-size: 10px;
+    gap: 5px;
+  }
+  .owner-demo-notice {
+    padding: 13px;
+    gap: 8px;
+  }
+  .owner-demo-notice p {
+    font-size: 10px;
+  }
+  .owner-stats {
+    gap: 9px;
+    margin-top: 22px;
+  }
+  .owner-stats > div {
+    padding: 14px 12px;
+    gap: 9px;
+  }
+  .owner-stats > div > span {
+    font-size: 9px;
+  }
+  .owner-stats svg {
+    width: 17px;
+    flex-shrink: 0;
+  }
+  .owner-stats strong {
+    font-size: 23px;
+  }
+  .owner-filters {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 23px;
+  }
+  .owner-filters label {
+    font-size: 10px;
+  }
+  .owner-date-controls input {
+    font-size: 12px;
+  }
+  .owner-list-heading p {
+    font-size: 11px;
+    line-height: 1.7;
+  }
+  .owner-booking {
+    grid-template-columns: 53px 1fr;
+    gap: 11px;
+    padding: 15px 12px;
+  }
+  .owner-booking-time > strong {
+    font-size: 20px;
+  }
+  .owner-booking-time > span {
+    font-size: 8px;
+    gap: 3px;
+  }
+  .owner-booking-details h3 {
+    font-size: 12px;
+  }
+  .owner-booking-details > p {
+    font-size: 10px;
+  }
+  .owner-booking-price {
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: left;
+  }
+  .owner-booking-price > span {
+    margin-top: 0;
+    font-size: 8px;
+  }
+  .owner-booking-price strong {
+    font-size: 14px;
+  }
+  .owner-booking-details > small {
+    font-size: 8px;
+  }
+  .owner-reference {
+    font-size: 7px;
+  }
+  .owner-login .owner-help {
+    font-size: 9px;
+  }
+  .owner-entry {
+    font-size: 9px;
+  }
+}
