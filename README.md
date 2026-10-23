@@ -2,7 +2,15 @@
 
 Site responsivo de uma barbearia fictícia, com apresentação, serviços e preços, equipe e agendamento funcional. Todo o conteúdo comercial é demonstrativo; as reservas não são encaminhadas a um estabelecimento real e nenhuma mensagem é enviada.
 
-## Visualizar como um site pelo navegador
+![Visual da página inicial da BRAVO. Barbearia](preview/site.png)
+
+## Baixar e abrir o site pronto
+
+Use o [download direto do site pronto](https://github.com/Kaiserg3/Barbearia/raw/refs/heads/main/downloads/BRAVO-Barbearia.zip). Extraia o ZIP e abra **ABRIR-BARBEARIA.html** no Chrome, Edge ou Firefox. Esse pacote contém somente um HTML completo, com imagens, fontes e agendamento demonstrativo local, e não exige Node.js ou instalação.
+
+Há também uma versão menor em **`ABRIR-BARBEARIA.html`**, na raiz deste repositório. Ela mantém o código do site e a agenda no próprio HTML, mas carrega as fotografias e fontes pela internet. O arquivo original de 2 MB pode ultrapassar o limite do visualizador de arquivos do GitHub; a versão menor evita esse problema de tamanho. O visualizador de código do GitHub não renderiza arquivos HTML como uma página de site.
+
+## Publicar como um site pelo navegador
 
 O GitHub exibe o código dos arquivos HTML. Para abrir a demonstração como um site navegável, os arquivos prontos para **GitHub Pages** estão na pasta `docs/`.
 
@@ -40,7 +48,7 @@ Em produção, o Express entrega o site compilado e a API juntos na porta 3001. 
 
 ## Abrir uma demonstração sem servidor
 
-Uma cópia pronta para abrir está em **`demo/BRAVO-Barbearia.html`**. No GitHub, use **Code → Download ZIP**, extraia o arquivo e abra esse HTML em um navegador. Essa cópia inclui todo o visual e a agenda local demonstrativa, sem precisar instalar Node.js.
+Uma cópia completa pronta para abrir está em **`demo/BRAVO-Barbearia.html`** e no pacote **`downloads/BRAVO-Barbearia.zip`**. O pacote traz apenas o HTML pronto, com o nome **ABRIR-BARBEARIA.html**, para evitar confusão com os arquivos de desenvolvimento. Essa cópia inclui todo o visual e a agenda local demonstrativa, sem precisar instalar Node.js.
 
 O `index.html` do projeto e o build normal precisam do servidor para carregar a aplicação. Para baixar e abrir uma versão independente em um navegador, gere:
 
@@ -49,6 +57,8 @@ npm run build:preview
 ```
 
 Abra `dist/BRAVO-Barbearia.html`. Esse arquivo inclui JavaScript, estilos, fontes e fotografias, sem solicitar arquivos externos. O conteúdo também aparece em visualizadores que bloqueiam JavaScript, mas os botões precisam de JavaScript para funcionar.
+
+Para gerar a variante menor, execute `npm run build:light`. A saída é `dist/ABRIR-BARBEARIA.html`; atualize a cópia da raiz e `docs/index.html` ao preparar uma nova entrega. A variante menor mantém os estilos e o JavaScript embutidos e usa os recursos públicos deste repositório para carregar fotos e fontes.
 
 Nesta versão independente, a agenda é uma simulação local, separada da API e do banco de dados do site. Os horários ficam apenas neste navegador; se o visualizador bloquear o armazenamento, duram apenas enquanto a página estiver aberta. Não são sincronizados entre clientes. O arquivo informa essa diferença ao agendar. A versão completa continua usando o servidor e o SQLite.
 

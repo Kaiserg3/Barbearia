@@ -13,7 +13,55 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <main
+        style="
+          min-height: 100vh;
+          box-sizing: border-box;
+          display: grid;
+          place-content: center;
+          gap: 18px;
+          padding: 32px;
+          background: linear-gradient(120deg, #faf0db, #e5eee2);
+          color: #26372c;
+          font:
+            16px/1.7 Arial,
+            sans-serif;
+        "
+      >
+        <h1
+          style="
+            margin: 0;
+            font:
+              64px Georgia,
+              serif;
+          "
+        >
+          BRAVO.
+        </h1>
+        <p style="margin: 0; max-width: 520px">
+          O site está carregando. A demonstração pronta também pode ser aberta
+          pelo arquivo <strong>ABRIR-BARBEARIA.html</strong>.
+        </p>
+        <a
+          style="color: #26372c; font-weight: bold"
+          href="./ABRIR-BARBEARIA.html"
+          >Abrir demonstração</a
+        >
+        <a
+          style="color: #4e613f"
+          href="https://github.com/Kaiserg3/Barbearia/raw/refs/heads/main/downloads/BRAVO-Barbearia.zip"
+          >Baixar o site pronto para abrir</a
+        >
+      </main>
+    </div>
+    <script>
+      if (window.location.protocol === "file:") {
+        window.location.replace(
+          new URL("./ABRIR-BARBEARIA.html", window.location.href).href,
+        );
+      }
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
