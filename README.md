@@ -2,6 +2,14 @@
 
 Site responsivo de uma barbearia fictícia, com apresentação, serviços e preços, equipe e agendamento funcional. Todo o conteúdo comercial é demonstrativo; as reservas não são encaminhadas a um estabelecimento real e nenhuma mensagem é enviada.
 
+## Visualizar como um site pelo navegador
+
+O GitHub exibe o código dos arquivos HTML. Para abrir a demonstração como um site navegável, os arquivos prontos para **GitHub Pages** estão na pasta `docs/`.
+
+Abra [Settings → Pages](https://github.com/Kaiserg3/Barbearia/settings/pages), selecione **Deploy from a branch**, escolha a branch **main** e a pasta **/docs**, e clique em **Save**. Aguarde a publicação terminar; o GitHub mostrará o link do site nessa tela. Enviar os arquivos ao repositório não ativa o Pages automaticamente.
+
+Essa publicação permite visualizar o site e testar a agenda demonstrativa local. A versão completa com reservas compartilhadas e login do proprietário exige a hospedagem Node.js descrita abaixo.
+
 ## Executar
 
 Requer **Node.js 24 ou superior** e npm. O SQLite é fornecido pelo próprio Node; o site público não exige um banco separado ou credenciais. A consulta privada do proprietário exige a configuração descrita abaixo.
