@@ -90,7 +90,7 @@ No HTML independente, o botão **Ver agenda de demonstração** permite conhecer
 
 ## Personalizar
 
-O catálogo, os profissionais, o endereço de exemplo no Meireles em Fortaleza e as regras de agenda estão em `server/index.js`. Os textos e os cartões da página estão em `src/App.jsx`; mantenha seus valores alinhados ao catálogo ao personalizar. O visual original em creme, grafite e dourado está em `src/styles.css`. O calendário está em `src/BookingCalendar.jsx` e o painel em `src/OwnerPanel.jsx`.
+O catálogo, os profissionais, o endereço de exemplo no Meireles em Fortaleza e as regras de agenda estão em `server/index.js`. Os textos e os cartões da página estão em `src/App.jsx`; mantenha seus valores alinhados ao catálogo ao personalizar. O visual em grafite e verde-oliva, com gradientes, textos claros e detalhes dourados, está em `src/styles.css`. Os textos principais usam 16 px e os controles, pelo menos 14 px; legendas decorativas usam 12 px. O calendário está em `src/BookingCalendar.jsx` e o painel em `src/OwnerPanel.jsx`.
 
 Antes de usar com uma empresa real, substitua os dados fictícios, ajuste os avisos de demonstração e configure hospedagem HTTPS, armazenamento persistente com backup e a política de privacidade adequada ao atendimento.
 

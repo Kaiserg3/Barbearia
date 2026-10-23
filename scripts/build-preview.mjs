@@ -108,8 +108,8 @@ const html = `<!doctype html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="light">
-<meta name="theme-color" content="#f8f7f3">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#222820">
 <meta name="description" content="Demonstração da BRAVO. Barbearia. Serviços, preços e agendamento local de exemplo.">
 <title>${title}</title>
 <link rel="icon" href="${embed(path.join(dist, "favicon.svg"))}">
